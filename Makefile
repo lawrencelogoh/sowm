@@ -4,6 +4,10 @@ PREFIX ?= /usr
 BINDIR ?= $(PREFIX)/bin
 CC     ?= gcc
 
+# Uncomment on OpenBSD
+#CFLAGS += -I/usr/X11R6/include
+#LDFLAGS = -L/usr/X11R6/lib
+
 all: sowm
 
 config.h:
